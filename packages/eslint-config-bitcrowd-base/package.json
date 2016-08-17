@@ -1,0 +1,37 @@
+{
+  "name": "eslint-config-bitcrowd-base",
+  "version": "5.0.2",
+  "description": "bitcrowd's base eslint config",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "npm run --silent lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bitcrowd/javascript"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "bitcrowd",
+    "javascript",
+    "styleguide"
+  ],
+  "author": "bitcrowd <info@bitcrowd.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitcrowd/javascript/issues"
+  },
+  "homepage": "https://github.com/bitcrowd/javascript#readme",
+  "dependencies": {
+    "eslint-config-airbnb-base": "^5.0.2",
+    "object-assign": "^4.1.0"
+  },
+  "peerDependencies": {
+    "eslint-plugin-import": "^1.13.0"
+  },
+  "devDependencies": {
+    "eslint": "^3.3.1"
+  }
+}
