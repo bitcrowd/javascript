@@ -9,7 +9,7 @@ Our ESLint configuration comes in 2 flavours:
 1. [`eslint-config-bitcrowd-base`](packages/eslint-config-bitcrowd-base)
   - provides our base linting configuration for ECMAScript 6+ applications
   - contains alternate config for applications written in ES5 and below
-2. [`eslint-config-bitcrowd`](packages/eslint-config-bitcrowd)
+2. [`eslint-config-bitcrowd-react`](packages/eslint-config-bitcrowd-react)
   - for ES6+ linting and additional rules for React applications
 
 Install the package which fits your current project and create an `.eslintrc`

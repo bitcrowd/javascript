@@ -1,7 +1,7 @@
 {
-  "name": "eslint-config-bitcrowd",
+  "name": "eslint-config-bitcrowd-react",
   "version": "10.0.1",
-  "description": "bitcrowd's eslint config",
+  "description": "bitcrowd's eslint config for working with react.js",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -16,7 +16,8 @@
     "config",
     "bitcrowd",
     "javascript",
-    "styleguide"
+    "styleguide",
+    "react"
   ],
   "author": "bitcrowd <info@bitcrowd.net>",
   "license": "MIT",
