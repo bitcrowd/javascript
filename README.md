@@ -11,6 +11,9 @@ Our ESLint configuration comes in 2 flavours:
   - contains alternate config for applications written in ES5 and below
 2. [`eslint-config-bitcrowd-react`](packages/eslint-config-bitcrowd-react)
   - for ES6+ linting and additional rules for React applications
+3. [`eslint-config-bitcrowd-angular`](packages/eslint-config-bitcrowd-angular)
+  - for ES6+ linting and additional rules for Angular applications
+  - for ES5 and below linting and additional rules for Angular applications
 
 Install the package which fits your current project and create an `.eslintrc`
 file ([example](linters/.eslintrc.json)). We recommend setting `"root": true`
