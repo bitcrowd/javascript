@@ -4,7 +4,7 @@ Derived from https://github.com/airbnb/javascript.
 
 ## ESLint Configuration
 
-Our ESLint configuration comes in 2 flavours:
+Our ESLint configuration comes in different flavours:
 
 1. [`eslint-config-bitcrowd-base`](packages/eslint-config-bitcrowd-base)
   - provides our base linting configuration for ECMAScript 6+ applications
