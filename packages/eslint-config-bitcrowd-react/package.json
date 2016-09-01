@@ -20,7 +20,7 @@
     "react"
   ],
   "author": "bitcrowd <info@bitcrowd.net>",
-  "license": "MIT",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/bitcrowd/javascript/issues"
   },
