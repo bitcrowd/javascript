@@ -28,7 +28,7 @@ Our default export contains all of our ESLint rules, including ECMAScript 6+ and
   npm install --save-dev eslint-config-bitcrowd-react eslint@^3.3.1 eslint-plugin-jsx-a11y@^2.1.0 eslint-plugin-import@^1.13.0 eslint-plugin-react@^6.1.0
   ```
 
-2. Add `"extends": "bitcrowd"` to your `.eslintrc`
+2. Add `"extends": "bitcrowd-react"` to your `.eslintrc`
 
 See [Airbnb's Javascript styleguide](https://github.com/airbnb/javascript) and
 the [ESlint config docs](http://eslint.org/docs/user-guide/configuring#extending-configuration-files)
