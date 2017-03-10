@@ -69,6 +69,15 @@ If you ever need a headless DOM in Node.js take a look at
 For a usage sample of Jasmine, Enzyme and jsdom, you can head over to the
 Tickety Tick [repo](https://github.com/bitcrowd/tickety-tick).
 
+When using Jasmine, be sure to enable random test execution order which -
+unfortunately - is not the default. In `spec/support/jasmine.json`, set:
+
+```json
+{
+  "random": true
+}
+```
+
 ## Metrics
 
 While *code metrics* should always be taken with a grain of salt, they can
