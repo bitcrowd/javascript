@@ -3,8 +3,8 @@
 Apart from our development processes and practices, we are employing additional
 methods for ensuring high code quality:
 
-1. *Linting* ensures that code is written in a consistent style and conforms to
-   pre-defined standards.
+1. *Automated Code Formatting* & *Linting* ensure that code is written in a
+   consistent style and conforms to pre-defined standards.
 2. *Tests* are useful as a design tool, for documenting your code and making
    sure it works correctly. Good tests allow you to change your code's
    structure without breaking its behaviour, during refactorings for instance.
@@ -13,6 +13,13 @@ methods for ensuring high code quality:
 
 Tool-support has gotten pretty good, so all of these are rather quick to set
 up. Where possible checks should be automated and have shareable configs.
+
+## Automated Code Formatting
+
+[Prettier](https://github.com/prettier/prettier) is a tool to automatically
+format source code. It can be integrated into your Git workflow and editor.
+
+Note that [using Prettier does not make linting obsolete](https://github.com/prettier/prettier#how-does-it-compare-to-eslint-or-tslint-stylelint).
 
 ## ESLint Configuration
 
@@ -33,6 +40,14 @@ so as to avoid system-specific differences in linting behaviour.
 
 Note: If you're working on an Angular(JS) application, consider using
 [eslint-plugin-angular](https://github.com/Gillespie59/eslint-plugin-angular).
+
+### Auto-fixing Linting Issues
+
+Some ESLint rules support automated fixing. To apply fixes, run `eslint` with
+the [`--fix`](https://eslint.org/docs/user-guide/command-line-interface#--fix)
+flag.
+
+### Directory-specific overrides
 
 In order to adapt the ESLint configuration for parts of the project tree,
 you can drop additional `.eslintrc` files into into specific subdirectories.
