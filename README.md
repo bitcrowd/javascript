@@ -19,7 +19,7 @@ up. Where possible checks should be automated and have shareable configs.
 [Prettier](https://github.com/prettier/prettier) is a tool to automatically
 format source code. It can be integrated into your Git workflow and editor.
 
-Note that [using Prettier does not make linting obsolete](https://github.com/prettier/prettier#how-does-it-compare-to-eslint-or-tslint-stylelint).
+Note that [using Prettier does not make linting obsolete](https://github.com/prettier/prettier#how-does-it-compare-to-eslint-or-tslint-stylelint). Prettier corrects code *formatting* issues but does not warn about code *quality* problems detected by many linting rules.
 
 ## ESLint Configuration
 
