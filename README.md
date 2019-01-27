@@ -32,7 +32,7 @@ The Airbnb configuration comes in different flavours:
 2. a [react configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
    for ES6+ linting with additional rules for React applications
 
-Install the package which fits your current project and create an `.eslintrc.json`
+Install the packages which fit your current project and create an `.eslintrc.json`
 file ([example](templates/.eslintrc.json)). We recommend setting
 [`"root": true`](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy)
 so as to avoid system-specific differences in linting behaviour.
@@ -53,6 +53,14 @@ you can drop additional `.eslintrc` files into into specific subdirectories.
 
 ESLint will pick up these file in addition to the one in the project root via
 [configuration cascading](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy).
+
+### Ignoring files
+
+You will likely want to prevent ESLint from scanning certain files, e.g. node modules and application bundles. To do so, you can either create an [`.eslintignore`](https://eslint.org/docs/user-guide/configuring#eslintignore) file or [use your `.gitignore`](https://eslint.org/docs/user-guide/configuring#using-an-alternate-file):
+
+```shell
+eslint --ignore-path .gitignore .
+```
 
 ## Testing
 
