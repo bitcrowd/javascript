@@ -1,7 +1,28 @@
-// Use this file as a starting point for your project's .eslintrc.
-// Copy this file, extend one of the shared configurations and
-// add rule overrides as needed (but use overrides sparingly).
+// Use this file as a starting point for your project’s .eslintrc.json.
+//
+// You will need the following development dependencies:
+//
+//   * eslint
+//   * eslint-config-airbnb (+ peer dependencies)
+//   * eslint-config-prettier
+//   * eslint-plugin-prettier
+//   * prettier
+//
+// Add rule overrides as needed (but use overrides sparingly).
 {
-  "extends": "airbnb",
-  "root": true
+  "root": true,
+  "env": {
+    "browser": true,
+    "jest": true
+  },
+  "extends": [
+    "airbnb",
+    "prettier"
+  ],
+  "plugins": [
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": "error"
+  }
 }
