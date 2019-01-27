@@ -1,4 +1,4 @@
-// Use this file as a starting point for your project’s .eslintrc.json.
+// Use this file as a starting point for your project’s `.eslintrc.json`.
 //
 // You will need the following development dependencies:
 //
@@ -7,6 +7,9 @@
 //   * eslint-config-prettier
 //   * eslint-plugin-prettier
 //   * prettier
+//
+// For Node.js projects, install and extend `eslint-config-airbnb-base`
+// and use the `"node"` environment, rather than `"browser"`.
 //
 // Add rule overrides as needed (but use overrides sparingly).
 {
