@@ -64,7 +64,7 @@ eslint --ignore-path .gitignore .
 
 ### Including files
 
-If you are using file extensions other than `.js` for files that need to be linted, e.g. `.jsx`, be sure to [specify them as a command line options](https://eslint.org/docs/user-guide/configuring#specifying-file-extensions-to-lint):
+If you are using file extensions other than `.js` for files that need to be linted, e.g. `.jsx`, be sure to [specify them via the command line](https://eslint.org/docs/user-guide/configuring#specifying-file-extensions-to-lint):
 
 ```shell
 eslint --ext .js,.jsx .
