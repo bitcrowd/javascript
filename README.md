@@ -74,29 +74,15 @@ eslint --ext .js,.jsx .
 
 Your code should have tests.
 
-So far, we've been mostly using
-[Jasmine](https://github.com/jasmine/jasmine-npm) which should look rather
-familiar if you've used RSpec before and it also has integrations for
-[Ruby](https://github.com/jasmine/jasmine-gem) and
-[Python](https://github.com/jasmine/jasmine-py). But that is a recommendation
-rather than a must.
+We're mostly using [Jest](https://github.com/facebook/jest) which should look rather familiar if you've used RSpec or any other behavior-driven development framework before.
 
 When you're testing React code, use [Enzyme](https://github.com/airbnb/enzyme).
 
 If you ever need a headless DOM in Node.js take a look at
 [jsdom](https://github.com/tmpvar/jsdom).
 
-For a usage sample of Jasmine, Enzyme and jsdom, you can head over to the
+For a usage sample of Jest, Enzyme and jsdom, you can head over to the
 Tickety Tick [repo](https://github.com/bitcrowd/tickety-tick).
-
-When using Jasmine, be sure to enable random test execution order which -
-unfortunately - is not the default. In `spec/support/jasmine.json`, set:
-
-```json
-{
-  "random": true
-}
-```
 
 ## Metrics
 
@@ -106,10 +92,7 @@ provide rather useful insights into how code changes affect code quality.
 Such metrics may be derived from *static analysis* of the source code or even
 describe *runtime characteristics* of the software.
 
-A metric we may want to use more often is *code coverage*. A popular tool to
-measure code coverage is [istanbuljs/nyc](https://github.com/istanbuljs/nyc).
-For an example project that uses `nyc` to measure coverage take a look at
-[Tickety Tick](https://github.com/bitcrowd/tickety-tick).
+A metric we may want to use more often is *code coverage*. Jest has support for [measuring code coverage](https://jestjs.io/docs/en/cli#coverage) out of the box. For an example project that uses Jest to measure coverage take a look at [Tickety Tick](https://github.com/bitcrowd/tickety-tick).
 
 There a services that allow you to push coverage information, create project
 badges and keep a "coverage history" for additional insights. They can be
