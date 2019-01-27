@@ -23,17 +23,16 @@ Note that [using Prettier does not make linting obsolete](https://github.com/pre
 
 ## ESLint Configuration
 
-Our ESLint configuration follows that of
-[Airbnb](https://github.com/airbnb/javascript).
+Our standard ESLint configuration follows that of [Airbnb](https://github.com/airbnb/javascript) and integrates [Prettier](https://prettier.io/docs/en/eslint.html).
 
-It comes in different flavours:
+The Airbnb configuration comes in different flavours:
 
 1. a [base configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb-base)
    for ECMAScript 6+ code (and a legacy version for ES5 and below)
 2. a [react configuration](https://github.com/airbnb/javascript/tree/master/packages/eslint-config-airbnb)
    for ES6+ linting with additional rules for React applications
 
-Install the package which fits your current project and create an `.eslintrc`
+Install the package which fits your current project and create an `.eslintrc.json`
 file ([example](templates/.eslintrc.json)). We recommend setting
 [`"root": true`](https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy)
 so as to avoid system-specific differences in linting behaviour.
@@ -52,18 +51,7 @@ flag.
 In order to adapt the ESLint configuration for parts of the project tree,
 you can drop additional `.eslintrc` files into into specific subdirectories.
 
-For instance, in a project that uses Jasmine for testing,
-create a `spec/.eslintrc.json` and add the following:
-
-```json
-{
-  "env": {
-    "jasmine": true
-  }
-}
-```
-
-ESLint will pick up this file in addition to the one in the project root via
+ESLint will pick up these file in addition to the one in the project root via
 [configuration cascading](http://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy).
 
 ## Testing
