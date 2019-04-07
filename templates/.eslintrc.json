@@ -4,6 +4,7 @@
 //
 //   * eslint
 //   * eslint-config-airbnb (+ peer dependencies)
+//   * eslint-plugin-jest
 //   * eslint-config-prettier
 //   * eslint-plugin-prettier
 //   * prettier
@@ -20,9 +21,11 @@
   },
   "extends": [
     "airbnb",
-    "prettier"
+    "plugin:jest/recommended",
+    "plugin:prettier/recommended"
   ],
   "plugins": [
+    "jest",
     "prettier"
   ],
   "rules": {
