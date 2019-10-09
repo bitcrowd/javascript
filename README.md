@@ -16,6 +16,8 @@ up. Where possible checks should be automated and have shareable configs.
 
 ## Automated Code Formatting
 
+At a very basic level, adding an [EditorConfig file](https://editorconfig.org/) in your project helps keeping code formatting consistent ([example](templates/.editorconfig)). Many editors already natively support EditorConfig, for others there are [plugins](https://editorconfig.org/#download).
+
 [Prettier](https://github.com/prettier/prettier) is a tool to automatically
 format source code. It can be integrated into your Git workflow and editor.
 
