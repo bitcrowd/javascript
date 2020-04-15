@@ -4,9 +4,10 @@
 //
 //   * eslint
 //   * eslint-config-airbnb (+ peer dependencies)
-//   * eslint-plugin-jest
 //   * eslint-config-prettier
+//   * eslint-plugin-jest
 //   * eslint-plugin-prettier
+//   * eslint-plugin-simple-import-sort
 //   * prettier
 //
 // For Node.js projects, install and extend `eslint-config-airbnb-base`
@@ -21,14 +22,16 @@
   },
   "extends": [
     "airbnb",
+    "airbnb/hooks",
     "plugin:jest/recommended",
     "plugin:prettier/recommended"
   ],
   "plugins": [
     "jest",
-    "prettier"
+    "prettier",
+    "simple-import-sort"
   ],
   "rules": {
-    "prettier/prettier": "error"
+    "simple-import-sort/sort": "error"
   }
 }
