@@ -10,8 +10,8 @@
 //   * eslint-plugin-simple-import-sort
 //   * prettier
 //
-// For Node.js projects, install and extend `eslint-config-airbnb-base`
-// and use the `"node"` environment, rather than `"browser"`.
+// For Node.js projects, install and extend `eslint-config-airbnb-base`,
+// drop `airbnb/hooks` and use the "node" environment, rather than "browser".
 //
 // Add rule overrides as needed (but use overrides sparingly).
 {
