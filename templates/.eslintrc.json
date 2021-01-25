@@ -32,6 +32,16 @@
     "simple-import-sort"
   ],
   "rules": {
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": [
+          "webpack.config.js",
+          "postcss.config.js",
+          "**/*.test.js"
+        ]
+      }
+    ],
     "simple-import-sort/imports": "error",
     "simple-import-sort/exports": "error"
   }
